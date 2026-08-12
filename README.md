@@ -7,7 +7,7 @@ hochladen oder auf Netlify/Uberspace/All-Inkl/IONOS ablegen – läuft sofort.
 
 | Datei | Inhalt |
 |---|---|
-| `index.html` | Startseite: Hero, Leistungen, Über mich, Vorteile, Zielgruppen, Ablauf, FAQ |
+| `index.html` | Startseite: Hero, Kennzahlen, Gewerke-Block, Über mich, Vorteile, Zielgruppen, Ablauf, FAQ |
 | `leistungen.html` | Die vier Leistungsbereiche im Detail |
 | `ueber-mich.html` | Werdegang, Qualifikationen, Arbeitsweise, Nachunternehmer-Abschnitt |
 | `kontakt.html` | Kontaktdaten und Anfrageformular |
@@ -16,21 +16,47 @@ hochladen oder auf Netlify/Uberspace/All-Inkl/IONOS ablegen – läuft sofort.
 
 ## Technik
 
-- **Keine externen Verbindungen.** Schrift (Kumbh Sans) liegt lokal unter
-  `assets/fonts/`. Keine Google Fonts, keine Karten, kein Analytics, keine Cookies.
-  Damit ist kein Cookie-Banner nötig und die Datenschutzerklärung bleibt schlank.
+- **Keine externen Verbindungen.** Alle drei Schriften liegen lokal unter
+  `assets/fonts/` (rund 170 KB). Keine Google Fonts, keine Karten, kein Analytics,
+  keine Cookies. Damit ist kein Cookie-Banner nötig und die Datenschutzerklärung
+  bleibt schlank.
 - **Kontaktformular** ohne Server: Beim Absenden öffnet sich das E-Mail-Programm des
   Besuchers mit fertig ausgefüllter Nachricht. Sobald ein Hoster mit PHP feststeht,
   kann das auf echten Versand umgestellt werden (siehe Kommentar in
   `assets/js/main.js`). Ein Honeypot-Feld gegen Bots ist eingebaut.
+- **Für das Handy gebaut.** Am unteren Bildschirmrand liegt auf Mobilgeräten eine
+  feste Leiste mit „Anrufen" und „WhatsApp" – der kürzeste Weg zum Auftrag.
+  Alle Bedienelemente sind mindestens 44 px hoch.
 - **Responsiv**, mit Tastatur bedienbar, `prefers-reduced-motion` wird respektiert,
   Inhalte bleiben auch ohne JavaScript sichtbar.
 
-## Farben & Schrift
+## Gestaltung
 
-- Grün `#52b238` (Akzent), Hellgrün `#61ce70`, Anthrazit `#171d21`, Hellgrau `#f3f7fa`
-- Schrift: Kumbh Sans
-- Alle Werte zentral in `assets/css/style.css` unter `:root`.
+Helle Grundfläche, kräftige Akzente – bewusst kein dunkles Layout.
+
+**Farben**
+
+| Rolle | Wert |
+|---|---|
+| Akzent (Text, Linien) | `#46941f` |
+| Akzent (Flächen, Buttons) | `#58bd35` |
+| Grüne Tönung | `#ecf5e5` |
+| Überschriften, Fußbereich | `#12211a` |
+| Sektionsfläche | `#f5f7f2` |
+
+**Schriften** – drei Rollen statt einer Einheitsschrift:
+
+- **Archivo** (900) für Überschriften. Schwer und leicht schmal – die Anmutung von
+  Fahrzeugbeschriftung und Bauschildern.
+- **IBM Plex Sans** für Fließtext. Technischer Unterton, sehr gut lesbar.
+- **IBM Plex Mono** für Labels, Kennzahlen und die Kopfleiste – wirkt wie Beschriftung
+  auf technischer Dokumentation.
+
+**Signaturelement:** der Gewerke-Block auf der Startseite. Die vier Leistungsbereiche
+sind keine vier losen Karten, sondern ein zusammenhängender Block mit grüner Kante.
+Das zeigt bildlich, worum es geht: alles aus einer Hand.
+
+Alle Werte zentral in `assets/css/style.css` unter `:root`.
 
 ## Vor dem Livegang zwingend erledigen
 
@@ -50,7 +76,8 @@ Browser sofort auffindbar.
 
 - **Logo** – aktuell ein selbst erstelltes Platzhalter-Zeichen (`assets/img/logo.svg`,
   Dach + Blitz für Gebäude + Elektro). Kann so bleiben oder ersetzt werden.
-- **Motto** – aktuell „Alles aus einer Hand". Alternativen siehe unten.
+- **Motto** – als Überschrift umgesetzt: „Vier Gewerke. Ein Ansprechpartner."
+  Alternativen siehe unten.
 - **Fotos** – drei gestrichelte Platzhalterflächen auf `leistungen.html`
   und `ueber-mich.html`. Eigene Bilder wirken deutlich besser als Stockfotos.
 - **Referenzen** – bewusst noch nicht angelegt, da keine Bilder/Freigaben vorliegen.
@@ -63,10 +90,17 @@ Browser sofort auffindbar.
 
 ## Mottovorschläge
 
-1. **Alles aus einer Hand.** (aktuell eingesetzt)
-2. Ein Ansprechpartner. Alle Gewerke.
+1. **Vier Gewerke. Ein Ansprechpartner.** (aktuell als Hauptüberschrift eingesetzt)
+2. Alles aus einer Hand.
 3. Technik und Objekt – aus einer Hand.
 4. Zuverlässig. Fair. Sauber.
+
+## Navigation
+
+Vier Punkte: Start, Leistungen, Über mich, Kontakt. Jeder Punkt führt auf eine
+eigene Seite. „Ablauf" ist bewusst **kein** Menüpunkt – es ist ein Abschnitt der
+Startseite. Ein Menü, in dem manche Punkte Seiten öffnen und andere nur scrollen,
+wirkt unfertig.
 
 ## Lokal ansehen
 
