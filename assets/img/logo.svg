@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Logo Christopher Pötzsch">
+  <defs>
+    <linearGradient id="cpGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#61ce70"/>
+      <stop offset="1" stop-color="#3f8c2c"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="18" fill="url(#cpGrad)"/>
+  <!-- Dach: steht für Objekt/Gebäude -->
+  <path d="M14 27.5 32 14l18 13.5" fill="none" stroke="#fff" stroke-width="3.6"
+        stroke-linecap="round" stroke-linejoin="round" opacity=".95"/>
+  <!-- Blitz: steht für Elektrotechnik -->
+  <path d="M34.6 30h-9.2l-3.1 12.4h6.2L26.4 52l12.1-14.3h-6.6z" fill="#fff"/>
+</svg>
