@@ -189,7 +189,7 @@ strong { font-weight: 600; }
 
 @media (min-width: 921px) {
   .logo__mark {
-    width: 220px;
+    width: 180px;
     height: auto;
     content: url('../img/logo-wordmark.png');
   }
