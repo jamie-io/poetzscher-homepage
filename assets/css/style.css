@@ -187,6 +187,15 @@ strong { font-weight: 600; }
 .logo__sub { font-family: 'Plex Mono', monospace; font-size: .63rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
 @media (max-width: 400px) { .logo__sub { display: none; } }
 
+@media (min-width: 921px) {
+  .logo__mark {
+    width: 220px;
+    height: auto;
+    content: url('../img/logo-wordmark.png');
+  }
+  .logo__text { display: none; }
+}
+
 .nav { display: flex; align-items: center; gap: 1.75rem; }
 .nav__list { display: flex; align-items: center; gap: 1.6rem; list-style: none; margin: 0; padding: 0; }
 .nav__list a { color: var(--ink); font-weight: 600; font-size: .97rem; padding-block: .35rem; }

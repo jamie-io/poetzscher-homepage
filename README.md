@@ -7,9 +7,8 @@ hochladen oder auf Netlify/Uberspace/All-Inkl/IONOS ablegen – läuft sofort.
 
 | Datei | Inhalt |
 |---|---|
-| `index.html` | Startseite: Hero, Kennzahlen, Gewerke-Block, Über mich, Vorteile, Zielgruppen, Ablauf, FAQ |
+| `index.html` | Startseite: Hero, Kennzahlen, Gewerke-Block, Erfahrung, Vorteile, Zielgruppen, Ablauf, FAQ |
 | `leistungen.html` | Die vier Leistungsbereiche im Detail |
-| `ueber-mich.html` | Werdegang, Qualifikationen, Arbeitsweise, Nachunternehmer-Abschnitt |
 | `kontakt.html` | Kontaktdaten und Anfrageformular |
 | `impressum.html` | Impressum (Vorlage, **Platzhalter offen**) |
 | `datenschutz.html` | Datenschutzerklärung (Vorlage, **Platzhalter offen**) |
@@ -79,13 +78,13 @@ Browser sofort auffindbar.
 - **Motto** – als Überschrift umgesetzt: „Vier Gewerke. Ein Ansprechpartner."
   Alternativen siehe unten.
 - **Fotos** – drei gestrichelte Platzhalterflächen auf `leistungen.html`
-  und `ueber-mich.html`. Eigene Bilder wirken deutlich besser als Stockfotos.
+  und der Startseite. Eigene Bilder wirken deutlich besser als Stockfotos.
 - **Referenzen** – bewusst noch nicht angelegt, da keine Bilder/Freigaben vorliegen.
 - **Öffnungszeiten / Notdienst** – nicht angegeben, daher weggelassen
   (Kommentar in `kontakt.html`).
 - **Einsatzgebiet** – angenommen: Bitterfeld-Wolfen, Dessau-Roßlau, Halle, Leipzig,
   Köthen, Delitzsch. Bitte bestätigen oder korrigieren.
-- **Rechtsform** – als „Einzelunternehmen" angenommen (`ueber-mich.html`).
+- **Rechtsform** – als „Einzelunternehmen" angenommen.
 - **Mitarbeiterzahl** – auf Wunsch nirgends erwähnt.
 
 ## Mottovorschläge
@@ -97,7 +96,7 @@ Browser sofort auffindbar.
 
 ## Navigation
 
-Vier Punkte: Start, Leistungen, Über mich, Kontakt. Jeder Punkt führt auf eine
+Drei Punkte: Start, Leistungen, Kontakt. Jeder Punkt führt auf eine
 eigene Seite. „Ablauf" ist bewusst **kein** Menüpunkt – es ist ein Abschnitt der
 Startseite. Ein Menü, in dem manche Punkte Seiten öffnen und andere nur scrollen,
 wirkt unfertig.

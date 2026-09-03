@@ -55,7 +55,6 @@ Die Adresse steht aktuell an sechs Stellen im Code und wird zentral getauscht.
 | C2 | **Öffnungszeiten** | fehlen komplett – aktuell bewusst weggelassen |
 | C3 | **Notdienst ja/nein** | fehlt – bei „ja" gehört eine Notfallnummer prominent auf die Seite |
 | C4 | **Fotos** | 3 Platzhalterflächen: Objektbetreuung, Außenanlagen, Reinigung |
-| C5 | **Portraitfoto** | Platzhalter auf `ueber-mich.html` |
 | C6 | **Referenzen** | bewusst noch nicht angelegt (keine Bilder/Freigaben vorhanden) |
 | C7 | **Kundenstimmen** | keine vorhanden – Abschnitt existiert daher nicht |
 
