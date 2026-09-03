@@ -354,6 +354,7 @@ body.nav-open .nav-toggle span:nth-child(3) { transform: translateY(-6px) rotate
 .service-photo { position: relative; height: clamp(300px, 28vw, 390px); margin: 0; overflow: hidden; border-radius: var(--r); background: var(--blue-primary); box-shadow: var(--shadow); }
 .service-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 52%, rgba(15, 34, 75, .78)); pointer-events: none; }
 .service-photo img { width: 100%; height: 100%; object-fit: cover; }
+#objektbetreuung .service-photo img { object-position: 50% 10%; }
 .service-photo figcaption { position: absolute; z-index: 1; right: 1.3rem; bottom: 1.15rem; left: 1.3rem; color: #fff; font-weight: 600; }
 
 /* --- Ablauf: echte Reihenfolge, deshalb nummeriert ------------------------ */
