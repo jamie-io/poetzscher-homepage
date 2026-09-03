@@ -168,7 +168,7 @@ strong { font-weight: 600; }
 .topbar {
   background: var(--ink); color: rgba(255, 255, 255, .68);
   font-family: 'Plex Mono', ui-monospace, monospace;
-  font-size: .78rem; letter-spacing: .02em; padding: .55rem 0;
+  font-size: .78rem; letter-spacing: .02em; padding: .45rem 0;
 }
 .topbar__inner { display: flex; flex-wrap: wrap; gap: .3rem 1.5rem; align-items: center; justify-content: space-between; }
 .topbar a { color: #fff; }
