@@ -1,0 +1,17 @@
+{
+  "v": 3,
+  "createdOnFiles": {"v": 1, "at": "2026-11-20T17:45:00Z"},
+  "title": "Pötzsch Website Varianten",
+  "launch": {"view": "canvas"},
+  "pages": [],
+  "boards": {
+    "Main.dc.html": {"x": 0, "y": 0, "w": 1440, "h": 4300, "title": "A – Leistungsverzeichnis (ruhig, für Hausverwaltungen & FM)", "expand": "fill"},
+    "Fahrzeug.dc.html": {"x": 1520, "y": 0, "w": 1440, "h": 4900, "title": "B – Fahrzeugbeschriftung (laut, fotogetrieben)", "expand": "fill"}
+  },
+  "order": ["Main.dc.html", "Fahrzeug.dc.html"],
+  "notes": {
+    "rowtitle": {"x": 0, "y": -300, "text": "Christopher Pötzsch – zwei neue Richtungen", "kind": "title1", "maxW": 2960},
+    "info": {"x": 3040, "y": 0, "w": 380, "size": "m", "fill": "blue", "text": "Aktuelle Seite zum Vergleich: jamie-io.github.io/poetzscher-homepage\n\nBeide Varianten: gleiche Fakten, blaue Logo-Palette, keine Karten, keine Icon-Kacheln, keine Zähler, keine Eyebrow-Labels, keine Linksrahmen.\n\nA: ruhig, typografisch, Leistungen als nummeriertes Verzeichnis. Liest sich wie ein gutes Firmenschreiben.\n\nB: laut, Fotos vollflächig, riesige Telefonnummer. Wirkt wie die Beschriftung auf dem Firmenwagen."}
+  },
+  "designSystems": []
+}
