@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Entwurf – Elektrotechnik Christopher Pötzsch</title>
+<link rel="icon" href="../assets/img/logo.svg" type="image/svg+xml">
+<link rel="preload" href="../assets/fonts/kumbh-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/source-sans-3-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:'Kumbh Sans';font-style:normal;font-weight:600 800;font-display:swap;src:url(../assets/fonts/kumbh-sans-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Kumbh Sans';font-style:normal;font-weight:600 800;font-display:swap;src:url(../assets/fonts/kumbh-sans-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:400 600;font-display:swap;src:url(../assets/fonts/source-sans-3-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Source Sans 3';font-style:normal;font-weight:400 600;font-display:swap;src:url(../assets/fonts/source-sans-3-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+.draft{background:#fff3b0;color:#1c2533;font:15px/1.45 'Source Sans 3',system-ui,sans-serif;border-bottom:1px solid #e6d77a}
+.draft p{max-width:1240px;margin:0 auto;padding:10px clamp(16px,4vw,40px)}
+.draft a{color:#163a7a}
+body{margin:0;background:#ffffff}
+.fl{--blue:#163a7a;--blue-d:#0d2552;--ink:#1c2533;--muted:#4a5568;--line:#dfe4ec;--soft:#f5f7fa;--tint:#eef2f8;--on:#dbe4f3;--on-m:#a9bbdb;--g:clamp(16px,4vw,40px);
+  background:#fff;color:var(--ink);font-family:'Source Sans 3',system-ui,sans-serif;font-size:19px;line-height:1.55;overflow-wrap:break-word}
+.fl *{box-sizing:border-box}
+.fl a{color:var(--blue)}
+.fl .wrap{max-width:1240px;margin:0 auto;padding-left:var(--g);padding-right:var(--g)}
+.fl h1,.fl h2,.fl h3{font-family:'Kumbh Sans',sans-serif;margin:0;letter-spacing:-0.01em}
+.fl h2{font-weight:800;font-size:clamp(28px,5.6vw,38px);line-height:1.12;color:var(--blue);hyphens:auto}
+.fl h3{font-weight:700;font-size:20px;line-height:1.3}
+.fl .todo{background:#fff3b0;color:var(--ink);padding:0 3px}
+
+/* Kopf */
+.fl .hdr{border-bottom:1px solid var(--line)}
+.fl .hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:88px}
+.fl .logo{display:block;line-height:0}
+.fl .logo img{height:64px;width:auto}
+.fl .nav{display:flex;gap:32px;font-size:17px;font-weight:600}
+.fl .nav a{color:var(--ink);text-decoration:none;padding:12px 0}
+.fl .nav a:hover{color:var(--blue);text-decoration:underline}
+.fl .hdr-tel{display:none;align-items:center;min-height:44px;padding:0 14px;background:var(--blue);color:#fff;text-decoration:none;font-family:'Kumbh Sans',sans-serif;font-weight:700;font-size:16px;white-space:nowrap}
+
+/* Einstieg */
+.fl .hero{background:var(--blue);color:#fff;display:grid;grid-template-columns:minmax(0,1fr) auto;height:600px}
+.fl .hero-text{padding:64px 48px 64px max(var(--g),calc((100vw - 1240px) / 2 + var(--g)));display:flex;flex-direction:column;justify-content:center;gap:22px}
+.fl .hero h1{font-weight:800;font-size:clamp(32px,4vw,50px);line-height:1.08;max-width:14em}
+.fl .hero p{margin:0;color:var(--on);font-size:20px;line-height:1.5;max-width:31em}
+.fl .tel-big{font-family:'Kumbh Sans',sans-serif;font-weight:800;font-size:clamp(36px,4.6vw,60px);line-height:1.05;color:#fff;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:8px;text-decoration-color:rgba(255,255,255,.35);white-space:nowrap}
+.fl .tel-big:hover{text-decoration-color:#fff}
+.fl .reach{display:flex;flex-wrap:wrap;gap:0 24px;font-size:18px}
+.fl .reach a{color:#fff;font-weight:600;text-underline-offset:4px;padding:10px 0}
+.fl .hero-img{display:block;height:600px;width:auto;max-width:44vw;object-fit:cover}
+
+/* Leiste */
+.fl .facts{background:var(--tint);border-bottom:1px solid var(--line)}
+.fl .facts ul{margin:0 auto;list-style:none;display:flex;font-size:17px;font-weight:600;color:var(--blue)}
+.fl .facts li{flex:1 1 0;padding:20px 24px;border-left:1px solid #c9d3e3}
+.fl .facts li:first-child{padding-left:0;border-left:0}
+
+/* Abschnitte */
+.fl .sec{padding-top:88px;padding-bottom:88px}
+.fl .band{background:var(--soft);border-top:1px solid var(--line)}
+.fl .head{display:flex;flex-direction:column;gap:12px;max-width:46em;margin-bottom:40px}
+.fl .head p{margin:0}
+.fl .cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 56px}
+.fl .cols h3{padding-bottom:10px;border-bottom:2px solid var(--blue);margin-bottom:6px}
+.fl .list{margin:0;padding:0;list-style:none}
+.fl .list li{padding:9px 0;border-bottom:1px solid #e3e8ef}
+.fl .list li:last-child{border-bottom:0}
+.fl .note{margin:28px 0 0;font-size:17px}
+
+.fl .about{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,5fr) minmax(0,5fr);gap:48px;align-items:start}
+.fl .about img{display:block;width:100%;height:440px;object-fit:cover}
+.fl .about .txt{display:flex;flex-direction:column;gap:16px}
+.fl .about p{margin:0}
+.fl .steps{margin:0;padding-left:24px;display:flex;flex-direction:column;gap:10px}
+
+/* Kontakt */
+.fl .contact{background:var(--blue);color:#fff}
+.fl .contact .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px 72px;align-items:end}
+.fl .contact h2{color:#fff}
+.fl .contact .l{display:flex;flex-direction:column;gap:16px}
+.fl .contact dl{margin:0;display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px 20px;font-size:18px}
+.fl .contact dt{color:var(--on-m)}
+.fl .contact dd{margin:0}
+.fl .contact dd a{color:#fff}
+
+.fl .ftr{background:var(--blue-d);color:var(--on-m);font-size:14px}
+.fl .ftr .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:0 32px;padding-top:6px;padding-bottom:6px}
+.fl .ftr span{padding:12px 0}
+.fl .ftr nav{display:flex;gap:24px}
+.fl .ftr a{color:var(--on-m);display:inline-flex;align-items:center;min-height:44px}
+
+@media (max-width:900px){
+  .fl .hero{grid-template-columns:1fr;height:auto}
+  .fl .hero-text{padding:48px var(--g)}
+  .fl .hero-img{width:100%;height:auto;max-width:none}
+  .fl .cols{grid-template-columns:1fr}
+  .fl .about{grid-template-columns:1fr 1fr}
+  .fl .about img{grid-column:1 / -1;height:360px}
+  .fl .contact .wrap{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  .fl .nav{display:none}
+  .fl .hdr-tel{display:inline-flex}
+  .fl .hdr .wrap{min-height:72px}
+  .fl .logo img{height:48px}
+  .fl .facts ul{flex-direction:column}
+  .fl .facts li,.fl .facts li:first-child{padding:14px 0;border-left:0;border-top:1px solid #c9d3e3}
+  .fl .facts li:first-child{border-top:0}
+  .fl .about{grid-template-columns:1fr}
+  .fl .sec{padding-top:64px;padding-bottom:64px}
+  .fl .contact dl{grid-template-columns:1fr;gap:2px}
+  .fl .contact dd{margin-bottom:12px}
+}
+</style>
+</head>
+<body>
+<div class="draft" role="note"><p><strong>Entwurf zur Abstimmung.</strong> Gelb markierte Stellen sind offen und müssen noch geklärt werden. Die aktuelle Website bleibt unverändert: <a href="../">zur aktuellen Startseite</a>.</p></div>
+<div class="fl">
+
+  <header class="hdr">
+    <div class="wrap">
+      <a class="logo" href="./"><img src="../assets/img/logo-wordmark.png" width="1094" height="374" alt="Elektrotechnik Christopher Pötzsch – Startseite"></a>
+      <nav class="nav" aria-label="Hauptnavigation">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#ueber">Über mich</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+      <a class="hdr-tel" href="tel:+4917676748006">0176 / 76748006</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Ein Ansprechpartner statt vier Firmen</h1>
+        <p>Elektroarbeiten, Hausmeisterservice, Reinigung und Grünpflege für Wohn- und Gewerbeobjekte in Mitteldeutschland. Elektrofachkraft mit Sitz in Bitterfeld&#8209;Wolfen.</p>
+        <a class="tel-big" href="tel:+4917676748006">0176 / 76748006</a>
+        <div class="reach">
+          <a href="https://wa.me/4917676748006">Per WhatsApp schreiben</a>
+          <a href="mailto:christopherpoetzsch22@gmail.com">christopherpoetzsch22@gmail.com</a>
+        </div>
+        <p style="font-size:15px;"><span class="todo">[Nummer prüfen: …006 oder …008]</span></p>
+      </div>
+      <img class="hero-img" width="881" height="1200" src="../assets/img/vorschlag/unterverteilung.jpg" alt="Unterverteilung, verdrahtet von Christopher Pötzsch">
+    </section>
+
+    <section class="facts" aria-label="Kurz gesagt">
+      <ul class="wrap">
+        <li>Elektrofachkraft</li>
+        <li>Eingetragener Handwerksbetrieb</li>
+        <li>Wartungsverträge für regelmäßige Betreuung</li>
+      </ul>
+    </section>
+
+    <section id="leistungen" class="wrap sec">
+      <div class="head">
+        <h2>Elektrotechnik</h2>
+      </div>
+      <div class="cols">
+        <div>
+          <h3>Installation und Reparatur</h3>
+          <ul class="list">
+            <li>Installation und Kabelverlegung</li>
+            <li>Trassenbau</li>
+            <li>Herd, Backofen und Kochfeld anschließen</li>
+            <li>Lampen und Leuchten montieren</li>
+            <li>Steckdosen und Lichtschalter austauschen</li>
+            <li>Fehlersuche und Reparatur</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Prüfung und Wartung</h3>
+          <ul class="list">
+            <li>Prüfung ortsveränderlicher Geräte nach DGUV V3</li>
+            <li>Prüfung ortsfester Anlagen und Geräte</li>
+            <li>Wartung elektrischer Anlagen</li>
+            <li><span class="todo">[Prüfprotokoll und Prüfplakette? klären]</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Netzwerk und Smart Home</h3>
+          <ul class="list">
+            <li>Netzwerkinfrastruktur</li>
+            <li>WLAN einrichten und verbessern</li>
+            <li>Smarte Beleuchtung einrichten</li>
+            <li><span class="todo">[Überwachungstechnik? klären]</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="note"><span class="todo">[Meister-Kooperation: mit wem, wofür? Davon hängt ab, welche Installationsarbeiten hier stehen dürfen.]</span></p>
+    </section>
+
+    <section class="band">
+      <div class="wrap sec">
+        <div class="head">
+          <h2>Für Hausverwaltungen und Gewerbe</h2>
+          <p>Regelmäßige Betreuung von Wohn- und Gewerbeobjekten, auf Wunsch mit Wartungsvertrag. Auch als Nachunternehmer für Facility-Management-Firmen.</p>
+        </div>
+        <div class="cols">
+          <div>
+            <h3>Hausmeisterservice</h3>
+            <ul class="list">
+              <li>Regelmäßige Objektkontrollen</li>
+              <li>Kleinreparaturen</li>
+              <li>Schließdienst</li>
+              <li>Erstmaßnahmen bei Schäden und Störungen</li>
+              <li><span class="todo">[Notdienst ja / nein? klären]</span></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Reinigung</h3>
+            <ul class="list">
+              <li>Unterhaltsreinigung</li>
+              <li>Treppenhausreinigung</li>
+              <li>Glasreinigung</li>
+              <li>Grund- und Bauendreinigung</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Grün- und Außenanlagen</h3>
+            <ul class="list">
+              <li>Rasen- und Heckenschnitt</li>
+              <li>Unkrautbeseitigung</li>
+              <li>Wege- und Parkplatzreinigung</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ueber" class="wrap sec about">
+      <img src="../assets/img/vorschlag/loeten.jpg" width="1133" height="1800" loading="lazy" alt="Christopher Pötzsch beim Löten an einer Platine">
+      <div class="txt">
+        <h2>Über mich</h2>
+        <p>Ich bin Elektroniker für Informations- und Telekommunikationstechnik und Elektrofachkraft, mit acht Jahren Berufserfahrung. <span class="todo">[Ausbildungsbezeichnung laut Zeugnis prüfen]</span></p>
+        <p>Von Bitterfeld-Wolfen aus betreue ich Wohn- und Gewerbeobjekte in Mitteldeutschland.</p>
+      </div>
+      <div class="txt">
+        <h2>So läuft es ab</h2>
+        <ol class="steps">
+          <li>Sie rufen an oder schreiben per WhatsApp oder E-Mail.</li>
+          <li>Ich melde mich innerhalb von 24 Stunden.</li>
+          <li>Wenn nötig, schaue ich mir die Sache vor Ort an. Besichtigung und Beratung sind kostenlos.</li>
+          <li>Sie bekommen ein Angebot.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="kontakt" class="contact">
+      <div class="wrap sec">
+        <div class="l">
+          <h2>Rufen Sie an oder schreiben Sie per WhatsApp</h2>
+          <a class="tel-big" href="tel:+4917676748006">0176 / 76748006</a>
+          <div class="reach"><a href="https://wa.me/4917676748006">Per WhatsApp schreiben</a></div>
+        </div>
+        <dl>
+          <dt>Anschrift</dt><dd>Elektrotechnik Christopher Pötzsch<br>Zum Feldrain 22<br>06766 Bitterfeld-Wolfen</dd>
+          <dt>E-Mail</dt><dd><a href="mailto:christopherpoetzsch22@gmail.com">christopherpoetzsch22@gmail.com</a></dd>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ftr">
+    <div class="wrap">
+      <span>© 2026 Christopher Pötzsch · Haftpflichtversichert</span>
+      <nav aria-label="Rechtliches"><a href="../impressum.html">Impressum</a><a href="../datenschutz.html">Datenschutz</a></nav>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
